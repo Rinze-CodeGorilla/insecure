@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to logged in users</title>
+</head>
+<body>
+    Hello, <em th:utext="${username}">Username</em>
+    <div><a th:if="${isAdmin} == true" href="/admin">Admin Panel</a></div>
+</body>
+</html>

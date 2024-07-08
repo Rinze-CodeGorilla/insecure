@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <table>
+        <tr><th>User</th><th>Secret</th></tr>
+        <tr th:each="user: ${users}"><td th:utext="${user.username}">Username</td><td th:utext="${user.secret}">Secret</td></tr>
+    </table>
+</body>
+</html>
